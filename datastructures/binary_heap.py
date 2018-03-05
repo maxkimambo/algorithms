@@ -54,25 +54,11 @@ class BinaryHeap:
             print(f"swapped {current_node} to position of {self.heap[parent_index]}")
             return self.__percolate_up(current_node)
 
-        # while parent_index > 0:
-        #     print(f"Processing parent index {parent_index}")
-        #     if self.heap[current_index] > self.heap[parent_index]:
-        #
-        #
-        #         # we have a new current index
-        #         current_index = self.heap.index(current_node)
-        #         # calculate the new parent
-        #         parent_index = current_index // 2
-
     def print_heap(self):
         print(f"{self.heap}")
-
 
     def pop(self):
         # TODO percolation
         result = self.heap.pop(0)
         return result
 
-    @staticmethod
-    def add_node(node):
-        print(node)
